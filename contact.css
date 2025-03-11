@@ -1,0 +1,30 @@
+
+/*--메인 영역--*/
+.container {
+    max-width: 1920;;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    padding: 40px 0;
+}
+.cat-img {
+    width: 320px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.sub-heading {
+    font-size: 14px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center; /* 세로 정렬 */
+    gap: 8px; /* 아이콘과 텍스트 간격 */
+}
+
+.icon-text img {
+    width: 24px; /* 아이콘 크기 조절 */
+    height: auto;
+}

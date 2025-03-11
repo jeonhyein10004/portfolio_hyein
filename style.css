@@ -1,0 +1,250 @@
+/* 1. 전체 페이지 중앙 정렬 */
+body {
+    font-family: "Hahmlet", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 모든 요소를 수직 가운데 정렬 */
+    min-height: 100vh; /* 최소 높이를 화면 높이만큼 설정 */
+}
+
+/* 2. 메인 콘텐츠 너비 & 가운데 정렬 */
+main {
+    margin-top: 140px;
+    max-width: 1920px;
+    width: 100%; /* 너비를 100%로 설정 */
+    text-align: center;
+    display: flex; /* 추가 */
+    flex-direction: column; /* 내부 요소를 세로 정렬 */
+    align-items: center; /* 내부 요소를 가운데 정렬 */
+}
+
+/* 섹션 간격 */
+section {
+    max-width: 1920px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+hr {
+    margin-top: 80px;
+}
+
+/* 헤더 스타일 */
+.header {
+    display: flex;
+    justify-content:space-around;
+    background-color: rgb(224, 233, 255);
+    height: 72px;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+}
+
+/* 로고 이미지 스타일 */
+.header h1 img {
+    height: 40px; /* 크기 조절 */
+    align-items: center;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 네비게이션 스타일 */
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav ul li {
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#nav-contact {
+    color: #333;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+#nav-contact:hover {
+    color: #3985d7;
+}
+
+#nav-contact:active {
+    color: #3985d7;
+    font-weight: 800;
+
+}
+
+/*--헤더 완료 -------------------------------*/
+
+/* 자기소개 섹션 */
+.intro {
+    display: flex;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+    gap: 60px;
+    margin: 0 auto; /* 중앙 정렬 */
+}
+
+.user-img {
+    height: 400px; /* 크기 조절 */
+}
+
+.intro-text{
+    text-align: left;
+
+}
+
+h1 {
+    color: #333333;
+    font-size: 24px;
+    font-weight: 700;
+    /* margin-top: 16px; */
+    line-height: 1.6;
+}
+
+h2 {
+    color: #505050;
+    font-size: 16px;
+    font-weight: 500;
+    /* margin-top: 12px; */
+    letter-spacing: -0.2px;
+}
+
+.tag {
+    background-color: #3985d7;
+    color: #ffffff;
+    border-radius: 99px;
+    padding: 6px 14px;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 4px;
+}
+
+.detail {
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: -0.2px;
+}
+
+.project-name {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+}
+
+.line {
+    display: block; /* 블록 요소로 변경 */
+    width: 100px; /* 원하는 가로 길이 설정 */
+    border: 1px solid #3985d7;
+    margin: 20px auto; /* 위아래 여백 + 가운데 정렬 */
+}
+
+
+
+
+/*--자기소개 완료 -------------------------------*/
+
+/* 디자인 컬러 토큰 */
+.text-primary {
+    font-size: 32px;
+    color:#3985d7;
+}
+
+.text-defult {
+    color: #333;
+    font-size: 28px;
+}
+
+.text-sub {
+    color: #505050;
+}
+/*버튼 디자인*/
+.btn-primary {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 48px;
+    background-color:rgb(231, 233, 245);
+    color: #555;
+    font-weight: 500;
+    padding: 0px 24px;
+    border-radius: 12px;
+    margin-top: 40px;
+}
+
+.btn-primary:hover {
+    background-color: #2865a5;
+    color: #fff;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+/*--디자인 토큰 완료 -------------------------------*/
+
+
+
+/* 포트폴리오 섹션 */
+.portfolio {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 40px 0;
+}
+
+/* .list-item {
+    flex-shrink: 0;
+    width: 480px;
+    height: 250px;
+    background-color: #2865a5;
+    color: #000;
+    border-radius:20px;
+    border:1px solid #838383;
+} */
+
+.portfolio img {
+    width: 500px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio img:hover {
+    transform: scale(1.01);
+}
+
+/* 푸터 스타일 */
+footer {
+    width: 100%;
+    background-color: rgb(224, 233, 255);
+    padding: 30px 40px;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 10px 0;
+}
